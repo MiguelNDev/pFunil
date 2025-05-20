@@ -1,0 +1,20 @@
+# Configuração do PFunil
+# Plugin para controlar e limitar o número de funis (hoppers) por jogador em servidores com PlotSquared
+
+# Limite padrão de funis por jogador
+# Este é o limite aplicado caso o jogador não tenha um limite personalizado
+default-limit: 64
+
+# Verificar apenas em plots
+# Se definido como true, o plugin verificará apenas se o jogador está colocando funis dentro de plots
+# Se definido como false, o plugin verificará em qualquer lugar do mundo
+check-plots-only: true
+
+# Mensagens do plugin
+messages:
+  prefix: "&8[&6PFunil&8] "
+  limit-reached: "&cVocê atingiu o limite de %limit% funis."
+  limit-warning: "&eVocê tem apenas %remaining% funis restantes."
+  limit-set: "&aLimite de funis para %player% definido para %limit%."
+  no-permission: "&cVocê não tem permissão para usar este comando."
+  reload-success: "&aConfiguração recarregada com sucesso!"

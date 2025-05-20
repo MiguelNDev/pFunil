@@ -1,0 +1,21 @@
+name: PFunil
+version: 1.0.0
+main: br.com.pstore.pfunil.PFunil
+api-version: 1.13
+depend: [PlotSquared]
+authors: [pStore]
+description: Plugin para controlar e limitar o número de funis (hoppers) por jogador em servidores com PlotSquared
+
+commands:
+  pfunil:
+    description: Comando principal do PFunil
+    usage: /<command> [reload|definir <jogador> <limite>|info <jogador>]
+    aliases: [pf]
+
+permissions:
+  pfunil.admin:
+    description: Permite usar o comando /pfunil e gerenciar o plugin
+    default: op
+  pfunil.bypass:
+    description: Permite ignorar o limite de funis
+    default: op
